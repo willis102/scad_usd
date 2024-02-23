@@ -1,0 +1,25 @@
+#usda 1.0
+(
+    defaultPrim = "hello"
+)
+
+def Xform "hello"
+{
+    double3 xformOp:translate = (0, 10, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate"]
+    
+    def "book_cover" (
+        references = [@./asset/BookVariationA.usdc@</BookVariationA/geo/bookVariation01/bookVariation01_cover>]
+    ) {
+
+    }
+
+// A single line comment example
+/**
+    def Sphere "world"
+    {
+        float radius = 5.0
+    }
+**/
+}
+
