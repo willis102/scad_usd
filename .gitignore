@@ -1,0 +1,12 @@
+# Ignore work/ and scratch/ so I don't commit my local test files by accident :)
+work/
+scratch/
+
+# Composer thumbnail caches
+.thumbs/
+
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db

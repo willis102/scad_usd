@@ -1,0 +1,9 @@
+# Crate and Image files should be treated as lfs
+*.usdc filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+
+# PDF as well
+*.pdf filter=lfs diff=lfs merge=lfs -text
+
+# And zip
+*.zip filter=lfs diff=lfs merge=lfs -text

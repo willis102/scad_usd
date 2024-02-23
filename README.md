@@ -1,2 +1,3 @@
-# scad_usd
-SCAD USD Talk Materials
+# SCAD USD Talk
+
+Repository for SCAD USD Talk Materials
