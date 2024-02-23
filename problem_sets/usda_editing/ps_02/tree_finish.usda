@@ -1,0 +1,43 @@
+#usda 1.0
+(
+    defaultPrim = "Tree"
+    upAxis = "Y"
+)
+
+def Xform "Tree"
+{
+    def Cone "Folliage_01"
+    {
+        uniform token axis = "Y"
+        double height = 85
+        double radius = 55
+    }
+
+    def Cone "Folliage_02"
+    {
+        uniform token axis = "Y"
+        double height = 70
+        double radius = 40
+        double3 xformOp:translate = (0, 35, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cone "Folliage_03"
+    {
+        uniform token axis = "Y"
+        double height = 50
+        double radius = 30
+        double3 xformOp:translate = (0, 60, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Cylinder "Trunk"
+    {
+        uniform token axis = "Y"
+        double height = 30
+        double radius = 10
+        double3 xformOp:translate = (0, -55, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}
+
